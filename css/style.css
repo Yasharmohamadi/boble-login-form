@@ -6,13 +6,15 @@
 body {
 	font-family: "Poppins", sans-serif;
 	background-color: #080710;
+	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
 }
 .container {
 	width: 450px;
+	position: relative;
+
 }
 .form {
 	width: 100%;
@@ -24,7 +26,6 @@ body {
 	color: #fff;
 	backdrop-filter: blur(10px);
 	z-index: 999;
-	position: relative;
 }
 .title {
 	width: 100%;
