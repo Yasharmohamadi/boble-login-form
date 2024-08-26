@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #080710;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.container {
+	width: 450px;
+}
+.form {
+	width: 100%;
+	padding: 50px 35px 35px 35px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.13);
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+	border: 2px solid rgba(255, 255, 255, 0.13);
+	color: #fff;
+	backdrop-filter: blur(10px);
+}
+.title {
+	width: 100%;
+	display: block;
+	font-size: 32px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.username_input {
+	margin-bottom: 26px;
+}
+
+.labels {
+	width: 100%;
+	display: block;
+}
+.inputs {
+	width: 100%;
+	display: block;
+	font-size: 20px;
+	background-color: rgba(255, 255, 255, 0.07);
+	height: 50px;
+	padding: 5px 15px;
+	font-weight: 300;
+	margin-top: 8px;
+	color: #fff;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	font-family: inherit;
+	margin-bottom: 30px;
+}
+
+.inputs:focus {
+	outline: 1px solid #fff;
+}
+
+.inputs::selection {
+	background: #757575;
+}
+.btn {
+	font-family: inherit;
+	width: 100%;
+	display: block;
+	font-size: 18px;
+	padding: 15px 0;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	margin-top: 46px;
+	font-weight: bold;
+	cursor: pointer;
+	/* border: 3px solid rgba(0, 0, 0, 0.3); */
+	transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+	box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.4);
+}
+
+.circle {
+	z-index: -1;
+	border-radius: 100%;
+	position: absolute;
+}
+
+.circle_red {
+	background: linear-gradient(45deg, #ad0000, #ff1744);
+	/* box-shadow: 0 0 30px rgba(213, 0, 0, 0.3); */
+	box-shadow: inset 0 0 20px rgb(0, 0, 0);
+}
+.circle_white {
+	background: linear-gradient(#757575, #e0e0e0);
+	/* box-shadow: 0 0 30px rgba(245, 245, 245, 0.3); */
+	box-shadow: inset 0 0 20px rgb(0, 0, 0);
+}
+.circle1 {
+	bottom: 20px;
+    right: 650px;
+	width: 140px;
+	height: 140px;
+}
+.circle2 {
+	top: 20px;
+    left: 620px;
+	width: 180px;
+	height: 180px;
+}
+
+@media screen and (max-width: 425px) {
+	.container {
+		width: 340px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.container {
+		width: 310px;
+	}
+	.form {
+		padding: 30px 35px;
+	}
+	.title {
+		font-size: 28px;
+	}
+	.inputs {
+		font-size: 17px;
+		height: 45px;
+	}
+	.btn {
+		padding: 8px 0;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.container {
+		width: 280px;
+	}
+	.form {
+		padding: 25px 30px;
+	}
+	.title {
+		font-size: 25px;
+	}
+	.inputs {
+		font-size: 15px;
+		height: 40px;
+	}
+	.btn {
+		padding: 6px 0;
+	}
+}
